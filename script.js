@@ -11,19 +11,11 @@ document.getElementById('search-btn').addEventListener('click', function () {
             const recipeArea = document.getElementById('recipe-area')
             for (let i = 0; i < foundMeals.length; i++) {
                 const labelAndImage = foundMeals[i];
-                console.log(labelAndImage.strMeal);
-                console.log(labelAndImage.strMealThumb);
-                //testing Area
-                // const recipeArea = document.getElementById('recipe-area') //this is important
-                // const img = document.createElement('img');
-                // img.src = labelAndImage.strMealThumb;
-                // const h3 = document.createElement('h3');
-                // h3.innerText = labelAndImage.strMeal;
-                // recipeArea.appendChild(h3);
-                // recipeArea.appendChild(img)
-                //testing area 2
-                const boxesDiv = document.createElement('div')
+                // console.log(labelAndImage.strMeal);
+                // console.log(labelAndImage.strMealThumb);
 
+                const boxesDiv = document.createElement('div')
+                boxesDiv.classList.add('boxes')
                 const contents = `
                     <div class="content">
                         <img class="images" src=${labelAndImage.strMealThumb}></img>

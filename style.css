@@ -10,7 +10,7 @@ body {
     text-decoration: none;
     padding: 20px;
 }
-.search {
+#search {
     display: flex;
     justify-content: center;
 }
@@ -21,15 +21,16 @@ body {
 #text-box {
     font-size: 25px;
 }
-.recipe-area {
+#recipe-area {
     margin: 50px;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
-#boxes {
+.boxes {
     background-color: white;
     border-radius: 10px;
+    box-shadow: 3px 3px 10px grey;
 }
 .content {
     display: flex;
