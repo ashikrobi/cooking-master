@@ -42,3 +42,16 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+#detail-info {
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+}
+#detail-info-texts {
+    padding: 20px;
+}
