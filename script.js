@@ -9,11 +9,7 @@ document.getElementById('search-btn').addEventListener('click', function () {
         .then(data => {
             const foundMeals = data.meals
             const recipeArea = document.getElementById('recipe-area')
-            for (let i = 0; i < foundMeals.length; i++) {
-                const labelAndImage = foundMeals[i];
-                // console.log(labelAndImage.strMeal);
-                // console.log(labelAndImage.strMealThumb);
-
+            foundMeals.map(labelAndImage => {
                 const boxesDiv = document.createElement('div')
                 boxesDiv.classList.add('boxes')
                 const contents = `
@@ -22,10 +18,8 @@ document.getElementById('search-btn').addEventListener('click', function () {
                         <h3 class="text-label">${labelAndImage.strMeal}</h3>
                     </div>
                 `
-                const finalContent = boxesDiv.innerHTML = contents;
+                const finalContent = boxesDiv.innerHTML = contents; //maybe declare it as a variable is not necessary
                 recipeArea.appendChild(boxesDiv);
-
-
-            } //do not remove
+            })
         })
 })
