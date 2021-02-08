@@ -32,6 +32,7 @@ const recipeDetail = name => {
         const dataObject = data.meals[0]
         const appendDetail = document.getElementById('detail-info')
         const detailDiv = document.createElement('div')
+        appendDetail.innerHTML = "";
         const detailMeasurement = `
             <img class="images" id="selected-food" src="${dataObject.strMealThumb}">
             <div id="detail-info-texts">
