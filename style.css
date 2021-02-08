@@ -54,3 +54,9 @@ body {
 #detail-info-texts {
     padding: 20px;
 }
+#error-message {
+    color: darkmagenta;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}

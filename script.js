@@ -21,6 +21,7 @@ document.getElementById('search-btn').addEventListener('click', function () {
                 recipeArea.appendChild(boxesDiv);
             })
         })
+        .catch(error => errorMessage("Couldn't find what you are looking for, please search different keyword"))
 })
 
 
@@ -55,4 +56,8 @@ const recipeDetail = name => {
     detailDiv.innerHTML = detailMeasurement;
     appendDetail.appendChild(detailDiv)
     })
+}
+
+const errorMessage = error => {
+    document.getElementById('error-message').innerText = error;
 }
