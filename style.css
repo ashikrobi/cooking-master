@@ -50,7 +50,6 @@ body {
     grid-template-columns: 1fr;
     background-color: white;
     border-radius: 10px;
-    display: none;
 }
 #detail-info-texts {
     padding: 20px;
